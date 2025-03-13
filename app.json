@@ -3,12 +3,12 @@
     "name": "CorazonesGAM",
     "slug": "CorazonesGAM",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "orientation": "landscape",
+    "icon": "./assets/Corazon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,12 +17,19 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/Corazon.png",
+        "backgroundColor": "#A42348"
+      },
+      "package": "com.corazonesgam.app",
+      "versionCode": 1
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/Corazon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e7867e2a-cf8e-4d70-b848-0d3b113f64fa"
+      }
     }
   }
 }
