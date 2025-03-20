@@ -39,7 +39,7 @@ const WebImage = (props) => {
   return <Image {...props} />;
 };
 
-const RegistrationScreen = () => {
+const RegistrationScreen = ({ onLogout }) => {
   // Estado para la conexión
   const [isConnected, setIsConnected] = useState(true);
   const [apiStatus, setApiStatus] = useState('Cargando...');
@@ -652,6 +652,13 @@ const RegistrationScreen = () => {
             onPress={sincronizarPendientes}
           >
             <Text style={styles.syncButtonText}>Sincronizar</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={styles.logoutButton} 
+            onPress={onLogout}
+          >
+            <Text style={styles.logoutButtonText}>Salir</Text>
           </TouchableOpacity>
           
           {/*          
@@ -1275,7 +1282,18 @@ const styles = StyleSheet.create({
     fontFamily: 'monospace', 
     fontSize: 12, 
     color: '#333' 
-  }
+  },
+  logoutButton: { 
+    backgroundColor: Colors.error || '#F44336', 
+    paddingHorizontal: 10, 
+    paddingVertical: 5, 
+    borderRadius: 15,
+    marginLeft: 5
+  },
+  logoutButtonText: { 
+    color: Colors.white, 
+    fontSize: 12 
+  },
 });
 
 export default RegistrationScreen;

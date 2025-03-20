@@ -227,7 +227,7 @@ export const crearRegistro = async (datos) => {
         return obj;
       }, {}));
       
-      const response = await axios.post(`${API_URL}/afiliados/store`, data, {
+      const response = await axios.post(`${API_URL}/afiliados`, data, {
         headers: {
           'Content-Type': 'multipart/form-data',
         }
@@ -303,7 +303,7 @@ export const crearRegistro = async (datos) => {
         }
       };
       
-      const response = await axios.post(`${API_URL}/afiliados/store`, datosEnvio, config);
+      const response = await axios.post(`${API_URL}/afiliados`, datosEnvio, config);
       
       console.log('Respuesta exitosa de la API:', response.data);
       
