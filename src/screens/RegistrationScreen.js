@@ -1284,16 +1284,16 @@ const styles = StyleSheet.create({
     color: '#333' 
   },
   logoutButton: { 
-    backgroundColor: Colors.error || '#F44336', 
-    paddingHorizontal: 10, 
-    paddingVertical: 5, 
-    borderRadius: 15,
-    marginLeft: 5
-  },
-  logoutButtonText: { 
-    color: Colors.white, 
-    fontSize: 12 
-  },
+  backgroundColor: Colors.error || '#F44336', 
+  paddingHorizontal: 10, 
+  paddingVertical: 5, 
+  borderRadius: 15,
+  marginLeft: 5
+},
+logoutButtonText: { 
+  color: Colors.white, 
+  fontSize: 12 
+},
 });
 
 export default RegistrationScreen;
